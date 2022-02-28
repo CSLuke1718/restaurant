@@ -9,7 +9,7 @@ Bryan:
 - YouTube page
 
 Luke:
-- database
+  - database
 - page for database query
 - mailing list database
 - page for joinging mailing list
