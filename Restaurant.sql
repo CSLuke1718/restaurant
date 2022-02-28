@@ -27,15 +27,15 @@ CREATE TABLE RestOrder(
 	LocNo		INT		NOT NULL,
 	OrderDate	DATE	NOT NULL,
 	Amount		NUMERIC(5,2)	NOT NULL,
-CONSTRAINT FK1_RestOrder (CustID) REFERENCES Customers(CustID),
-CONSTRAINT FK2_RestOrder (LocNo) REFERENCES Locations(LocNo));
+CONSTRAINT FK1_RestOrder FOREIGN KEY (CustID) REFERENCES Customers(CustID),
+CONSTRAINT FK2_RestOrder FOREIGN KEY (LocNo) REFERENCES Locations(LocNo));
 
 CREATE TABLE OrderItems(
 	OrderItemID		INT	PRIMARY KEY,
 	OrderID		INT		NOT NULL,
 	ItemNo 		INT		NOT NULL,
-CONSTRAINT FK1_OrderItems (OrderID) REFERENCES RestOrder(OrderID),
-CONSTRAINT FK2_OrderItems (ItemNo) REFERENCES Menu(ItemNo));
+CONSTRAINT FK1_OrderItems FOREIGN KEY (OrderID) REFERENCES RestOrder(OrderID),
+CONSTRAINT FK2_OrderItems FOREIGN KEY (ItemNo) REFERENCES Menu(ItemNo));
 
 
 -- inserting data into tables
