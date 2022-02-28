@@ -40,8 +40,8 @@ CONSTRAINT FK2_OrderItems FOREIGN KEY (ItemNo) REFERENCES Menu(ItemNo));
 
 -- inserting data into tables
 -- CustID, Name, email
-INSERT INTO Customers VALUES(10001, 'Jake Turner',,);
-INSERT INTO Customers VALUES(10002, 'Jenipher Thatcher',,);
+INSERT INTO Customers VALUES(10001, 'Jake Turner','');
+INSERT INTO Customers VALUES(10002, 'Jenipher Thatcher','');
 
 -- LocNo, Address, Zip, City, LocState
 INSERT INTO Locations VALUES(101, '1600 Pennsylvania Avenue NW', 20500, 'Washington', 'DC');
