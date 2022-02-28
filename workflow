@@ -10,7 +10,7 @@ Bryan:
 
 Luke:
   - database
-- page for database query
+  - page for database query
 - mailing list database
 - page for joinging mailing list
 
