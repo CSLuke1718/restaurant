@@ -83,6 +83,7 @@
                 <p>Email: $email</p>
                 <p>Phone: $phone</p>
                 <p><a href = 'MailingFormDatabase.php'>Click here to view entire database.</a></p>
+				<p><a href = 'Projhome.html'>Click here to go back to home.</a></p>
                 </body></html>" );
             die(); // finish the page
     }
@@ -104,7 +105,7 @@
 		} 
 		//phone error
 		if ( $formErrors[ "phoneError" ] ) 
-            print( "<p class = 'error'>Must be in the form (555) 555-5555" );
+            print( "<p class = 'error'>Phone number must be in the form (555) 555-5555" );
 	//end Contact Information
 	
 	//setting up mailing list section
@@ -123,6 +124,7 @@
 	print("
 	<p class='head'><input type='submit' name='submit' value='submit'></p>
 	</form>
+	<p><a href = 'Projhome.html'>Click here to go back to home.</a></p>
 </body>
 </html>");
 	?>
@@ -131,3 +133,4 @@
 
 
 
+	
