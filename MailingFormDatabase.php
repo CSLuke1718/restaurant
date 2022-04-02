@@ -14,6 +14,27 @@
     </style>
 </head>
 <body>
+  <table width="100%" border="1">
+  <tbody>
+    <tr>
+      <td colspan="2" style="text-align: center; color: #0E279C;"><h1>The Onkyo Diner</h1></td>
+    </tr>
+	<tr>
+      <td colspan="2" style="text-align: center">
+      <div class ="topnav">
+      <a href="ProjHome.html">Home</a>
+      <a href="projmenu.html">Menu</a>
+      <a href="projlocation.html">Location</a>
+	  <a href="projvideo.html">Video</a>
+		<a class="active" href="databaseQuery.html">Database</a>
+		<a href="MailingListForm.php">Subscribe</a>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
     <?php
         // build SELECT query
         $query = "SELECT * FROM Subscribers";
