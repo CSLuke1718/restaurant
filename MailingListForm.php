@@ -3,12 +3,7 @@
 <html>
 <head>
 	<title>Mailing List Form</title>
-	<style type = "text/css">
-        p       { margin: 0px; }
-        .error  { color: red }
-        p.head  { font-weight: bold; margin-top: 10px; }
-        label   { width: 5em; float: left; }
-    </style>
+	<link rel="stylesheet" href="CSS style.css">
 </head>
 <body>
   <table width="100%" border="1">
