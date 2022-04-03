@@ -4,14 +4,7 @@
 <html>
 <head>
     <title>Mailing List Database</title>
-    <style type = "text/css">
-        table  { background-color: lightblue; 
-                border: 1px solid gray; 
-                border-collapse: collapse; }
-        th, td { padding: 5px; border: 1px solid gray; }
-        tr:nth-child(even) { background-color: white; }
-        tr:first-child { background-color: lightgreen; }
-    </style>
+    <link rel="stylesheet" href="CSS style.css">
 </head>
 <body>
   <table width="100%" border="1">
