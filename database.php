@@ -13,11 +13,12 @@
 <body>
 	<?php
 		$select = $_POST["select"];
+		$table = $_POST["table"];
 		
 		if($select == '*')
-			$query = "SELECT ".$select." FROM Customers";
+			$query = "SELECT ".$select." FROM ".$table.";";
 		else
-			$query = "SELECT DISTINCT(".$select.") FROM Customers";
+			$query = "SELECT DISTINCT(".$select.") FROM ".$table.";";
 		
 		if(!($database = mysqli_connect("localhost",
             "bonnie", "bon", "Restaurant")))
