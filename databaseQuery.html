@@ -35,9 +35,14 @@
   </tbody>
   <h1>Query Restaurant Database</h1>
 	<form method="post" action="database.php">
-		<p>Select a field to display:
+		<p>Select 
 			<select name="select">
 				<option selected>*</option>
+			</select>
+			 from 
+			<select name="table">
+				<option selected>Menu</option>
+				<option>Customers</option>
 			</select>
 			<input type="submit" value="Send Query">
 		</p>
