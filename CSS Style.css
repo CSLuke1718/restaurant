@@ -1,8 +1,18 @@
-body {	background-image: url(Pictures/Background.jpg);
+
+body {	background-image: url(Pictures/Background2.jpg);
 		background-size: cover;
-		background-repeat: repeat;
-		text-align: center; }
+		background-repeat: no-repeat;
+		background-color: black;
+		text-align: center; 
+		padding-top: 50px;
+		padding-right: 50px;
+		padding-bottom: 50px;
+		padding-left: 50px;
+  }
 .topnav{ overflow: hidden; background-color: #A9A9A9;}
+
+
+
 .topnav a {
   float: center;
   color: #f2f2f2;
@@ -11,11 +21,12 @@ body {	background-image: url(Pictures/Background.jpg);
   text-decoration: none;
   font-size: 17px;
 }
+
 div.transbox {
   margin: 30px;
   background-color: #ffffff;
   border: 1px solid black;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .topnav a:hover {
   background-color: #ddd;
@@ -63,6 +74,7 @@ div.transbox {
 }
 .dropdown-content a:hover {  background-color: #ddd;}
 .dropdown:hover .dropdown-content {  display: block; display: inline;}
-table    { border:ridge 5px black; background-color: transparent; color:#ffffff; }
+table    { border:ridge 5px black; background-color:white; color:#000000; }
 table td { border:inset 1px #000; }
-.homepage-carousel-item{ background:#fff; }
+.homepage-carousel-item{ background:#fff; 
+}
