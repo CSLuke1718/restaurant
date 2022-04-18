@@ -19,14 +19,20 @@
       <a href="projmenu.html">Menu</a>
       <a href="projlocation.html">Location</a>
 	  <a href="projvideo.html">Video</a>
-		<a class="active" href="databaseQuery.html">Database</a>
-		<a href="MailingListForm.php">Subscribe</a>
+		<a href="databaseQuery.html">Database</a>
+		<a class="active" href="MailingListForm.php">Subscribe</a>
+		<div class="dropdown" style="">
+			<button class="dropbtn"><a href="#">Assignments </a><i class="fa fa-caret-down"></i></button>
+			<div class="dropdown-content">
+				<a href="#">Assignment 1</a>
+				<a href="#">Assignment 2</a>
+			</div>
+      </div>
       </div>
       </td>
     </tr>
-  </tbody>
-</table>
-
+<tr>
+<td>
 
     <?php
         // build SELECT query
@@ -50,7 +56,7 @@
         } // end if
     ?>
     <h1>Mailing List Subscribers</h1>
-    <table>
+    <table style="margin:auto;">
         <caption>Subscribers stored in the database</caption>
         <tr> <!--column headers -->
             <th>ID</th>
@@ -73,5 +79,9 @@
             mysqli_close( $database );
         ?>
     </table>
+	</td>
+	</tr>
+	  </tbody>
+</table>
 </body>
 </html>
