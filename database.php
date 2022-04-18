@@ -60,8 +60,8 @@
       </div>
       </td>
     </tr>
-   </table>
-  </tbody>
+	<tr>
+	<td>
 	<table style="margin: auto; text-align: left;">
 		<thead>Results of SELECT <?php print("$select") ?> from the <?php print("$select") ?> table of the Restaurant Database</thead>
 		<tbody>
@@ -78,6 +78,9 @@
 		</tbody>
 	</table>
 	<p>Your Search yielded <?php print( mysqli_num_rows( $result )) ?> results.</p>
-	
+	</td>
+	</tr>
+   </table>
+  </tbody>
 </body>
 </html>
