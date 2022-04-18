@@ -29,10 +29,8 @@
       </div>
       </td>
     </tr>
-  </tbody>
-</table>
-
-
+	<tr>
+	<td>
 
 	<?php 
 
@@ -106,7 +104,7 @@
                 <p>Email: $email</p>
                 <p>Phone: $phone</p>
                 <p><a href = 'MailingFormDatabase.php'>Click here to view entire database.</a></p>
-				<p><a href = 'Projhome.html'>Click here to go back to home.</a></p>
+				<p><a href = 'Projhome.html'>Click here to go back to home.</a></p></td></tr></tbody></table>
                 </body></html>" );
             die(); // finish the page
     }
@@ -117,14 +115,14 @@
 	print("
 	<h1>Please enter your information to join the mailing list.</h1>
 	<form method='post' action='MailingListForm.php'>
-		<h2>Contact Information</h2>");
+		<h2>Contact Information</h2><table style=\"margin: auto; text-align: left;border:hidden;\"><tbody>");
 		//printing the rows
 		foreach($inputList as $inputName => $inputAlt) {
-			print("<div><label>$inputAlt:</label><input type='text' name='$inputName' 
-			value='" . $$inputName . "'>");
+			print("<tr><td><label>$inputAlt:</label></td><td><input type='text' name='$inputName' 
+			value='" . $$inputName . "'></td>");
 			if ( $formErrors[ ( $inputName )."Error" ] == true ) 
 				print( "<span class = 'error'>*</span>" );        
-            print( "</div>" ); //ending each line
+            print( "</td></tr>" ); //ending each line
 		} 
 		//phone error
 		if ( $formErrors[ "phoneError" ] ) 
@@ -132,7 +130,7 @@
 	//end Contact Information
 	
 	//setting up mailing list section
-	print("
+	print("</tbody></table>
 	<h2>Mailing List Selection</h2>
 	<p>Please indicate which mailing lists you are interested in subscribing to.</p>
 	<select name= 'list' >");
@@ -147,7 +145,7 @@
 	print("
 	<p class='head'><input type='submit' name='submit' value='submit'></p>
 	</form>
-	<p><a href = 'Projhome.html'>Click here to go back to home.</a></p>
+</td></tr></tbody></table>
 </body>
 </html>");
 	?>
