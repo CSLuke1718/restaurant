@@ -103,8 +103,7 @@
                 <p>Name: $fName $lName</p>
                 <p>Email: $email</p>
                 <p>Phone: $phone</p>
-                <p><a href = 'MailingFormDatabase.php'>Click here to view entire database.</a></p>
-				<p><a href = 'Projhome.html'>Click here to go back to home.</a></p></td></tr></tbody></table>
+                <p><a href = 'MailingFormDatabase.php'>Click here to view entire database.</a></p></td></tr></tbody></table>
                 </body></html>" );
             die(); // finish the page
     }
